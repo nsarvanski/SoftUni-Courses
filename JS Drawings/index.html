@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Figures</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🖼️ JavaScript Pattern Drawing Program</h1>
+    <div id="figureOptions" class="figure-options">
+      <p>Please choose a figure:</p>
+      <p>1.Right-angled Triangle</p>
+      <p>2.Square with Hollow Center</p>
+      <p>3.Diamond</p>
+      <p>4.Hollow Square</p>
+      <p>5.Pyramid</p>
+      <p>6.Reverse Pyramid</p>
+      <p>7.Rectangle with Hollow Center</p>
+    </div>
+    <form class="firstInput">
+      <p>Figure Selector</p>
+      <input
+        type="text"
+        id="figureSelector"
+        placeholder="Pick a number from 1...7"
+      />
+      <p id="resultOne"></p>
+    </form>
+
+    <form class="secondInput">
+      <p>Row Selector</p>
+      <input
+        type="text"
+        id="rowSelector"
+        placeholder="Select the number of rows from 1 ... 20"
+      />
+      <button type="button" id="buttonTwo">Draw!</button>
+      <p id="resultTwo"></p>
+    </form>
+    <pre id="patternOutput"></pre>
+    <div id="invalidInputImage" style="display: none">
+      <img
+        class="hidden"
+        src="https://ih1.redbubble.net/image.4964121514.1810/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg"
+        alt="Invalid Input"
+        width="300"
+      />
+    </div>
+    <script src="drawing.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
